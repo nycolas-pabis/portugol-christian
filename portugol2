@@ -1,0 +1,49 @@
+programa {
+
+    cadeia nome = "nycolau vulgo cura velcro"
+    inteiro idade = 15 
+    cadeia cidade = "alphavela do p3"
+
+
+
+
+
+
+
+
+
+  funcao inicio() {
+
+      escreva ("Qual seu nome:\n")
+      leia (nome)
+
+      limpa()
+
+      escreva("Qual sua idade:\n")
+
+      leia(idade)
+
+      limpa()
+
+      escreva ("Qual sua cidade:\n")
+      leia (cidade)
+
+      limpa()
+
+      escreva("Meu nome é ", nome, " tenho ", idade, " anos de idade e já fiz sexo, atualmente resido na cidade de ", cidade".")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+}
