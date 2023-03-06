@@ -1,0 +1,30 @@
+programa {
+  funcao inicio() {
+    inteiro n1, n2, resultado
+    real resultado2
+
+escreva("Informe o primeiro valor: \n")
+leia(n1)
+
+limpa()
+escreva("Informe o segundo  valor :\n")
+leia(n2)
+
+limpa()
+resultado = n1 + n2
+escreva("O resultado dos valores ", n1, " + ", n2, " = ", resultado)
+
+resultado = n1 - n2
+escreva("\nO resultado dos valores ", n1, " - ", n2, " = ", resultado)
+
+resultado = n1 * n2
+escreva("\nO resultado dos valores ", n1, " * ", n2, " = ", resultado)
+
+resultado2 = n1 / n2
+escreva("\nO resultado dos valores ", n1, " / ", n2, " = ", resultado2)
+
+
+
+
+  }
+}
