@@ -92,12 +92,16 @@ programa {
               escreva("|                CLIENTES CADASTROS              |\n")
               escreva("'************************************************'\n")
 
-              escreva("Nº 01 - ", nome_cliente, " - Idade: ", idade, "\n")
+              para(n = 0; n < quany; n++)
+              {
+
+              escreva("Nº: ", n+1, " - " nome_cliente[n], " - Idade: ", idade[n], "\n")
+              }
 
               escreva("*************************************************\n")
               Util.aguarde(5000) //Aguarda 05 segundos
               inicio()
-          pare
+              pare
         }
          caso "3":
         {
