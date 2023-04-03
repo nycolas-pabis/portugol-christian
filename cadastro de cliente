@@ -44,8 +44,8 @@ programa {
 
   inclua biblioteca Util
 
-    cadeia opcao, nome_cliente
-    inteiro idade
+    inteiro opcao, idade[8], quant = 0, n
+    cadeia idade nome completo[8]
 
     funcao inicio() {
 
