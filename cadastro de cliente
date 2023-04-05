@@ -56,7 +56,8 @@ programa {
 
     escreva(" 1 - Cadastrar novo cliente\n")
     escreva(" 2 - Vizualizar clientes cadastrados\n")
-    escreva(" 3 - Sair do sistema\n")
+    escreva(" 3 - Quem você deseja buscar?\n")
+    escreva(" 4 - Sair do sistema\n")
 
     escreva("***********************************************************\n")
     escreva("Opção desejada: ")
@@ -103,8 +104,28 @@ programa {
               Util.aguarde(5000) //Aguarda 05 segundos
               inicio()
               pare
+
         }
+
          caso 3:
+         {
+          escreva("Escreva o nome de quem você deseja buscar: \n")
+          leia(nome_completo)
+          limpa()
+
+          escreva(".************************************************.\n")
+          escreva("|              RESULTADO DE PESQUISA             |\n")
+          escreva
+          escreva("O ", nome_completo, " esta na posição", n)
+
+          pare
+         }
+
+         
+
+
+
+         caso 4:
         {
           limpa()
           escreva("Saindo do sistema em 05 segundos...")
