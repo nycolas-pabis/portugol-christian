@@ -45,7 +45,7 @@ programa {
   inclua biblioteca Util
 
     inteiro opcao, idade[8], quant = 0, n
-    cadeia idade nome completo[8]
+    cadeia nome_completo[8]
 
     funcao inicio() {
 
@@ -64,27 +64,29 @@ programa {
 
     escolha(opcao)
     {
-        caso "1":
+        caso 1:
         {
               limpa()
-              escreva("Informe o nome do cliente:")
-              leia(nome_cliente)
+              escreva("Informe o nome do cliente:\n")
+              leia(nome_completo[quant])
 
               limpa()
-              escreva("Qual a idade de cliente ", nome_cliente, ":")
-              leia(idade)
+              escreva("Qual a idade de cliente ", nome_completo[quant], ":\n")
+              leia(idade[quant])
 
               limpa()
               //Exibe mensagem de usuario cadastrado com sucesso
               escreva("AVISO: Usuário cadastrado com sucesso!")
               Util.aguarde(3000)
+
+              quant++ //Incrementar a variavel quant 
               
               //Retorna para o menu inicio
               inicio()
               pare
         }
              
-        caso "2":
+        caso 2:
         {
           limpa()
               limpa()
@@ -92,10 +94,9 @@ programa {
               escreva("|                CLIENTES CADASTROS              |\n")
               escreva("'************************************************'\n")
 
-              para(n = 0; n < quany; n++)
+              para(n = 0; n < quant; n++)
               {
-
-              escreva("Nº: ", n+1, " - " nome_cliente[n], " - Idade: ", idade[n], "\n")
+                escreva("Nº: ", n+1, " - ", nome_completo[n], " - Idade: ", idade[n], "\n")
               }
 
               escreva("*************************************************\n")
@@ -103,16 +104,11 @@ programa {
               inicio()
               pare
         }
-         caso "3":
+         caso 3:
         {
           limpa()
           escreva("Saindo do sistema em 05 segundos...")
-          Util.aguarde(1000)
-
-          limpa()
-          escreva("Saindo do sistema em 04 segundos...")
-          Util.aguarde(1000)
-
+          Util.aguarde(1000)    escreva("***********************************************************\n")
           limpa()
           escreva("Saindo do sistema em 03 segundos...")
           Util.aguarde(1000)
