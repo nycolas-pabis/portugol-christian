@@ -1,0 +1,10 @@
+programa {
+  cadeia altura
+  funcao inicio() {
+    
+    escreva("Qual a altura do muro")
+    leia(altura)
+    limpa()
+    se (valor == altura)
+  }
+}
