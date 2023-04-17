@@ -1,10 +1,22 @@
 programa {
-  cadeia altura
+  inteiro al
   funcao inicio() {
+    escreva("Qual o tamanho do muro?\n")
+    leia(al)
     
-    escreva("Qual a altura do muro")
-    leia(altura)
-    limpa()
-    se (valor == altura)
+    se(al > 3)
+    {
+    escreva("A lesma vai demorar ", al - 2, " dias.")
+    
+    }
+     
+     senao
+    {
+      
+      escreva("A lesma vai demorar 1 dia")
+    }
+
+    
+   
   }
 }
